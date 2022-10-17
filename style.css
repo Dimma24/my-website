@@ -281,6 +281,16 @@ button {
     align-items: center;
 }
 
+.social-icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 24px;
+}
+
+.social-icons a i {
+    margin-right: 10px;
+}
+
 footer {
     background-color: #030303;
     padding: 20px 0;
