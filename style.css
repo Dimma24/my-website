@@ -185,8 +185,34 @@ button {
     opacity: 0.8;
 }
 .row {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 24px;
+}
+
+.project-tile {
+    padding: 40px;
+    background-color: #121213;
+    cursor: pointer;
+    min-height: 200px;
+    transition: all 0.2s ease-in-out 0s;
+    width: 100%;
+    margin-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+}
+
+@media (min-width: 576px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .row {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .about-me {
@@ -244,37 +270,6 @@ button {
 
     .about-me__meta > div:last-child {
         grid-column: span 2;
-    }
-}
-
-.project-tile {
-    padding: 40px;
-    background-color: #121213;
-    cursor: pointer;
-    min-height: 200px;
-    transition: all 0.2s ease-in-out 0s;
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.col-4 {
-    width: 50%;
-    padding-inline: 15px;
-    margin-block: 20px;
-}
-
-@media (min-width: 700px) {
-    .col-4 {
-        width: 25%;
-        padding-inline: 15px;
-    }
-}
-@media (max-width: 500px) {
-    .col-4 {
-        width: 100%;
     }
 }
 
