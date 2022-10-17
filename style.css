@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;
+}
+
+html,
+body {
+   height: 100%;
+   background-color: #0c0c0c;
+   color: #fff;
+}
+
+body {
+   line-height: 1.5;
+   font-family: "Source Sans Pro", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Ubuntu", sans-serif;
+   color: #fff;
+   line-height: 1.2;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   overflow-wrap: break-word;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+li {
+   list-style: none;
+}
+
+.gradient {
+   background-image: repeating-linear-gradient(45deg, #000, #0c0c0c 60%);
+}
+
+.nav {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   height: 80px;
+   align-items: center;
+   position: fixed;
+   box-shadow: 0 0 4px #0e0d0d;
+   background-color: #0c0c0c;
+}
+
+.navbar-list {
+   display: flex;
+   gap: 20px;
+}
+
+.hero {
+   width: 100vw;
+   height: 600px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+.hero h2 {
+   font-size: 15px;
+   font-weight: 400;
+   margin-block: 10px;
+}
+
+.hero h1 {
+   font-size: 45px;
+   margin-block: 30px;
+}
+
+.header {
+   max-width: 80vw;
+}
+
+@media (min-width: 550px) {
+   .header {
+      max-width: 500px;
+   }
+
+   .hero h1 {
+      font-size: 50px;
+   }
+}
+
+button {
+   padding: 5px 50px;
+   line-height: 1.2;
+   border-radius: 30px;
+   border: 2px solid #fff;
+   background: transparent;
+   color: #fff;
+}
+
+.projects {
+   min-height: 500px;
+   display: flex;
+   align-items: center;
+   padding: 70px 10vw;
+   text-align: center;
+}
+
+.projects h2 {
+   margin-bottom: 30px;
+}
+
+.projects button {
+   margin-top: 30px;
+}
+.project-tile h4 {
+   font-size: 24px;
+   line-height: 30px;
+   text-transform: capitalize;
+   margin-block: 20px;
+}
+
+.project-tile .language {
+   font-size: 10px;
+   line-height: 15px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-weight: 700;
+   font-family: "Ubuntu", sans-serif;
+   color: var(--text-alt);
+   opacity: 0.8;
+}
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.about-me img {
+   height: 300px;
+}
+
+.project-tile {
+   padding: 40px;
+   background-color: #121213;
+   cursor: pointer;
+   min-height: 200px;
+   transition: all 0.2s ease-in-out 0s;
+   width: 100%;
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   text-align: left;
+}
+
+.col-4 {
+   width: 50%;
+   padding-inline: 15px;
+   margin-block: 20px;
+}
+
+@media (min-width: 700px) {
+   .col-4 {
+      width: 25%;
+      padding-inline: 15px;
+   }
+}
+@media (max-width: 500px) {
+   .col-4 {
+      width: 100%;
+   }
+}
