@@ -58,22 +58,39 @@
 
             <section class="contact-me">
                 <h2 class="section-title">Contact Me</h2>
-                <form>
+                <form action="index.html" method="post">
                     <div class="form-group">
-                        <input type="text" placeholder="Your name" />
-                        <input type="text" placeholder="Your email address" />
+                        <input
+                            type="text"
+                            name="fullname"
+                            required
+                            placeholder="Your name"
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            placeholder="Your email address"
+                        />
                     </div>
                     <div class="message">
-                        <input type="text" placeholder="Subject" />
+                        <input
+                            type="text"
+                            name="subject"
+                            required
+                            placeholder="Subject"
+                        />
                     </div>
                     <div>
                         <textarea
+                            required
                             placeholder="Enter your message"
                             cols="30"
                             rows="5"
+                            name="message"
                         ></textarea>
                     </div>
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
             </section>
 
